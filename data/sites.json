@@ -1,0 +1,26 @@
+{
+  "hertfordshire": {
+    "title": "Hertfordshire Infill & Edge‑of‑Settlement Opportunities",
+    "parcelSize": null,
+    "landUse": "Infill/Brownfield",
+    "transport": "A1(M), M25",
+    "ownership": null,
+    "planningNotes": "Check Local Plan & Green Belt"
+  },
+  "bedfordshire": {
+    "title": "Bedfordshire Infill & Agricultural Conversion Candidates",
+    "parcelSize": null,
+    "landUse": "Infill/Agricultural conversion",
+    "transport": "A6, A421",
+    "ownership": null,
+    "planningNotes": "Settlement boundaries & prior approvals"
+  },
+  "cambridgeshire": {
+    "title": "Cambridgeshire Growth & Infill Zones",
+    "parcelSize": null,
+    "landUse": "Infill/Strategic",
+    "transport": "A14, A10, rail",
+    "ownership": null,
+    "planningNotes": "Flood risk screening; design codes"
+  }
+}
