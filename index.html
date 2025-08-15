@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Land Mapping Locations</title>
+  <meta name="description" content="Static, API-ready district pages for land mapping MVP." />
+  <link rel="preload" href="assets/img/placeholder-map.webp" as="image" />
+  <style>
+    /* Minimal essentials; real styling comes later */
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 1.5rem; }
+    header, main, footer { max-width: 900px; margin-inline: auto; }
+    .list { padding-left: 1rem; }
+    .note { font-size: 0.95rem; opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Land Mapping Locations</h1>
+    <p class="note">Static HTML now. Plug-in maps and API data later without rewrites.</p>
+  </header>
+
+  <main>
+    <nav aria-label="Districts">
+      <ul class="list">
+        <li><a href="locations/hertfordshire.html">Hertfordshire</a></li>
+        <li><a href="locations/bedfordshire.html">Bedfordshire</a></li>
+        <li><a href="locations/cambridgeshire.html">Cambridgeshire</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer>
+    <p class="note">Tip: the content on each district page is wrapped in <code>#site-data</code> for popup reuse.</p>
+  </footer>
+</body>
+</html>
