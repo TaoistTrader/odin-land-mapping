@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cambridgeshire — Land Mapping</title>
+  <meta name="description" content="Cambridgeshire district overview for mapping MVP." />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 1.5rem; }
+    header, main, footer { max-width: 900px; margin-inline: auto; }
+    #map { width: 100%; height: 420px; background: #e6e6e6; display: grid; place-items: center; }
+    .back { display: inline-block; margin-top: 0.25rem; }
+    .grid { display: grid; gap: 1rem; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .meta-list { padding-left: 1rem; }
+    .note { font-size: 0.95rem; opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cambridgeshire District</h1>
+    <a class="back" href="../index.html">← Back to All Locations</a>
+  </header>
+
+  <main class="grid" role="main">
+    <section aria-label="Map">
+      <div id="map" role="img" aria-label="Map placeholder">
+        <p class="note">Map will load here (Leaflet/Mapbox later)</p>
+      </div>
+    </section>
+
+    <section aria-label="Site Data">
+      <div id="site-data">
+        <h2>Cambridgeshire Growth & Infill Zones</h2>
+
+        <figure>
+          <img src="../assets/img/placeholder-map.webp" alt="Cambridgeshire aerial/map view placeholder" width="100%" />
+          <figcaption class="note">Illustrative only. Replace with real tiles later.</figcaption>
+        </figure>
+
+        <h3>Description</h3>
+        <p>Target infill within commuter belts and along strategic growth corridors. Consider floodplain constraints and local design codes.</p>
+
+        <h3>Property Details</h3>
+        <ul class="meta-list">
+          <li>Parcel Size: TBD</li>
+          <li>Land Use: Infill / Strategic sites (candidate)</li>
+          <li>Nearest Transport Links: A14, A10, rail nodes</li>
+          <li>Ownership Status: TBD</li>
+          <li>Planning Notes: Flood risk screening; design code compliance</li>
+        </ul>
+
+        <h3>Next Steps</h3>
+        <ol>
+          <li>Title deed search (Land Registry)</li>
+          <li>Flood risk & constraints screening</li>
+          <li>BCIS build-cost range</li>
+          <li>Early LPA engagement for design code alignment</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="note">Popup-ready: inject <code>#site-data</code> into your map popup.</p>
+  </footer>
+
+  <script></script>
+</body>
+</html>
