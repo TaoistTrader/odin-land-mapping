@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bedfordshire — Land Mapping</title>
+  <meta name="description" content="Bedfordshire district overview for mapping MVP." />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 1.5rem; }
+    header, main, footer { max-width: 900px; margin-inline: auto; }
+    #map { width: 100%; height: 420px; background: #e6e6e6; display: grid; place-items: center; }
+    .back { display: inline-block; margin-top: 0.25rem; }
+    .grid { display: grid; gap: 1rem; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .meta-list { padding-left: 1rem; }
+    .note { font-size: 0.95rem; opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bedfordshire District</h1>
+    <a class="back" href="../index.html">← Back to All Locations</a>
+  </header>
+
+  <main class="grid" role="main">
+    <section aria-label="Map">
+      <div id="map" role="img" aria-label="Map placeholder">
+        <p class="note">Map will load here (Leaflet/Mapbox later)</p>
+      </div>
+    </section>
+
+    <section aria-label="Site Data">
+      <div id="site-data">
+        <h2>Bedfordshire Infill & Agricultural Conversion Candidates</h2>
+
+        <figure>
+          <img src="../assets/img/placeholder-map.webp" alt="Bedfordshire aerial/map view placeholder" width="100%" />
+          <figcaption class="note">Illustrative only. Replace with real tiles later.</figcaption>
+        </figure>
+
+        <h3>Description</h3>
+        <p>Blend of town-edge infill and agricultural conversions. Investigate transport adjacency and serviceability; prioritize plots with clear access and utilities proximity.</p>
+
+        <h3>Property Details</h3>
+        <ul class="meta-list">
+          <li>Parcel Size: TBD</li>
+          <li>Land Use: Infill / Agricultural conversion</li>
+          <li>Nearest Transport Links: A6 / A421 corridors</li>
+          <li>Ownership Status: TBD</li>
+          <li>Planning Notes: Check settlement boundaries & prior approvals</li>
+        </ul>
+
+        <h3>Next Steps</h3>
+        <ol>
+          <li>Title deed search (Land Registry)</li>
+          <li>Planning history scan (portal scrape/manual)</li>
+          <li>BCIS build-cost range</li>
+          <li>High-level utilities due diligence</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="note">Popup-ready: inject <code>#site-data</code> into your map popup.</p>
+  </footer>
+
+  <script></script>
+</body>
+</html>
